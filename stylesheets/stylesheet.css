@@ -1,3 +1,5 @@
+
+/* MAIN STYLE CSS TO USE ACROSS ALL HTML PAGES */
 .blog-container {
   background: #fff;
   border-radius: 5px;
@@ -41,7 +43,7 @@ width: 90%;
 
 .blog-author h4::before,
 .blog-author--no-cover h4::before {
-background: url("assets/images/leah.png");
+background: url("../assets/images/leah.png");
 background-size: cover;
 border-radius: 50%;
 content: " ";
@@ -68,6 +70,7 @@ font-size: 20px;
 margin: 0 auto;
 width: 90%;
 margin-bottom: -2%;
+margin-top: -2%;
 }
 
 .video-body {
@@ -76,12 +79,10 @@ width: 100%;
 }
 
 .blog-title h1 {
-padding-top: 1%;   
 color: #333;
   font-size: 30px;
   text-align: center;
   padding-bottom: 2%;
-  margin-top: 2%;
 }
 
 .blog-summary p {
@@ -177,3 +178,113 @@ margin-top: -5%;
 .icon-star:hover {
   fill: #ff4d4d;
 }
+
+.fb:hover{
+  cursor: pointer;
+  color: #3b5998;
+}
+.ig:hover{
+  cursor: pointer;
+  color: #cd486b
+}
+
+.tw:hover{
+ color: #1DA1F2;
+ cursor: pointer;
+}
+
+.sn:hover{
+  color: rgb(191, 188, 20);
+  cursor: pointer;
+}
+
+/* VIDEOS */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-bottom: 2%;
+  padding-top: 30px; height: 0; overflow: hidden;
+  border-radius: 3%; 
+  }
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+  :root {
+    --fir-font-article: "adobe-garamond-pro", "Times New Roman", Times;
+    --fir-font-header: "foco", Helvetica;
+    --fir-blue-twitter-alpha: rgba(85,172,238, 0.6);
+    --fir-color-grey: rgba(0,0,0, 0.40);
+  }
+  .blog-header{
+    padding: 15px;
+  }
+
+  /*+++++++++++++++++++++++++++++++++ UPDATE HERE FOR PHOTO++++++++++++++++++++++++++++++++  */
+  .img-circular{
+    width: 80px;
+    height: 80px;
+    background-image: url('../assets/images/liz.png');
+    background-size: cover;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+   }
+
+   /*++++++++++++***************************************************************************/
+  
+  .fir-image-figure {
+    margin: 0;
+  
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .fir-image-figure .caption, .fir-image-figure figcaption {
+    padding-left: 15px;
+  }
+  
+  html.wf-active .fir-image-figure .fig-author-figure-title {
+    font-family: var(--fir-font-header);
+    font-size: 16px;
+  }
+  
+  .fir-image-figure .fig-author-figure-title {
+    color: var(--fir-color-grey);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  
+  .fir-imageover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fadeInFadeOut 2s infinite;
+  }
+  
+  @keyframes fadeInFadeOut {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  div {
+  border: 2px solid darkblue;
+}
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at https://material.angularjs.org/license.
+*/
